@@ -24,7 +24,7 @@ const ValveAccessory = require('./lib/ValveAccessory');
 const OilDiffuserAccessory = require('./lib/OilDiffuserAccessory');
 const DoorbellAccessory = require('./lib/DoorbellAccessory');
 
-const PLUGIN_NAME = 'homebridge-tuya';
+const PLUGIN_NAME = 'homebridge-tuya-plus';
 const PLATFORM_NAME = 'TuyaLan';
 const DEFAULT_DISCOVER_TIMEOUT = 60000;
 
@@ -234,10 +234,11 @@ class TuyaLan {
         this.log.warn('Unregistering', homebridgeAccessory.displayName);
 
         delete this.cachedAccessories[homebridgeAccessory.UUID];
-        this.api.unregisterPlatformAccessories(PLATFORM_NAME, PLATFORM_NAME, [homebridgeAccessory]);
+        this.api.unregisterPlatformAccessories(PLUGIN_NAME, PLATFORM_NAME, [homebridgeAccessory]);
     }
 
     removeAccessoryByUUID(uuid) {
         if (uuid) this.removeAccessory(this.cachedAccessories.get(uuid));
     }
 }
+
