@@ -14,14 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrianjagielak/homebridge-tuya-plus.git"
+    "url": "git+https://github.com/Noobburner/homebridge-tuya-plus.git"
   },
   "author": "Rayan Khan",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/adrianjagielak/homebridge-tuya-plus/issues"
-  },
-  "homepage": "https://github.com/adrianjagielak/homebridge-tuya-plus#readme",
+ 
+  "homepage": "https://github.com/Noobburner/homebridge-tuya-plus#readme",
   "dependencies": {
     "async": "^3.2.2",
     "commander": "^3.0.1",
